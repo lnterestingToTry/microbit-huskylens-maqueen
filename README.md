@@ -2,7 +2,7 @@
 ![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/rob1.png)
 ![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/rob2.png)
 
-# Завдання: Запрограмувати мікроконтролер на вирішення задачі слідування робоплатформи за цільовим об’єктом, дані про який зчитує відеодатчик.
+# Ціль: Запрограмувати мікроконтролер на вирішення задачі слідування робоплатформи за цільовим об’єктом, дані про який зчитує відеодатчик.
 
 # Принцип роботи алгоритму
 Завданням є задіювати мотори так, аби цільовий об'єкт залишався на зображенні, що зчитує відеодатчик
@@ -19,4 +19,8 @@
 - має меншу висоту, ніж h2, необхідно задіяти два мотори для руху вперед
 ![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/side.png)
 
+
+
+# Програмний опис алгоритму
+Програмування мікроконтролера Micro:bit відбується за допомогою сервісу MakeCode
 
