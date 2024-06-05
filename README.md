@@ -34,7 +34,49 @@ def on_forever():
 basic.forever(on_forever)
 ```
 
-  
+Інструкції, описані в функції on_forever будуть виконуватись постійно (по анології з while).
+
+Кожна ітерація on_forever має починатись зі зчитування даних із відеодатчика. Необхідно отримати позицію цетра по координаті х та висоту об'єкта на зображенні.
+```
+huskylens.request()
+
+x_box_position = huskylens.reade_box(1, Content1.X_CENTER)
+box_height = huskylens.reade_box(1, Content1.HEIGHT)
+```
+
+```
+if x_box_position > width_center + free_gap_x:
+        MoveRight()
+    elif width_center - free_gap_x > x_box_position and x_box_position > -1:
+        MoveLeft()
+    elif box_height > box_height_default + free_gap_y:
+            MoveBackward()
+    elif box_height < box_height_default - free_gap_y and box_height > -1:
+            MoveForward()
+    else:
+        Stop()
+```
+
+
+
+```
+def on_forever():
+    if x_box_position > width_center + free_gap_x:
+        MoveRight()
+    elif width_center - free_gap_x > x_box_position and x_box_position > -1:
+        MoveLeft()
+    elif box_height > box_height_default + free_gap_y:
+            MoveBackward()
+    elif box_height < box_height_default - free_gap_y and box_height > -1:
+            MoveForward()
+    else:
+        Stop()
+```
+
+
+
+
+
 `y_box_position`= 0
 `x_box_position` = 0
 `y_box_position` = 0
