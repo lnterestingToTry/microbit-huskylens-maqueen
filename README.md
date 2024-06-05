@@ -61,16 +61,23 @@ elif width_center - free_gap_x > x_box_position and x_box_position > -1:
 ```
 (В умовних виразах використовується `... and x_box_position > -1`. Якщо відеодатчик не знаходить об'єкта на зображення, то повертає -1. Аби запобігти виходу за допустипі рамки можливих координат, використано `... and x_box_position > -1`)
 
+Умови відносно висоти об'єкта на зображенні:
+
+![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/н1h5.png)
+
+`box_height_default` - значення, що встановлюється вручну. В даному проекті використовується значення 65
+`free_gap_y` - h5
 
 ```
-if x_box_position > width_center + free_gap_x:
-    MoveRight()
-elif width_center - free_gap_x > x_box_position and x_box_position > -1:
-    MoveLeft()
 elif box_height > box_height_default + free_gap_y:
         MoveBackward()
 elif box_height < box_height_default - free_gap_y and box_height > -1:
         MoveForward()
+```
+
+Якщо жодна з умов не викликана, зупинка:
+
+```
 else:
     Stop()
 ```
