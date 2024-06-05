@@ -51,7 +51,7 @@ box_height = huskylens.reade_box(1, Content1.HEIGHT)
 ![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/x2h4.png)
 
 `width_center` - x2
-`free_gap_x` - h4
+`free_gap_x` - h4 (значення, що встановлюється вручну)
 
 ```
 if x_box_position > width_center + free_gap_x:
@@ -65,8 +65,8 @@ elif width_center - free_gap_x > x_box_position and x_box_position > -1:
 
 ![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/y1h5.png)
 
-`box_height_default` - значення, що встановлюється вручну. В даному проекті використовується значення 65
-`free_gap_y` - h5
+`box_height_default` - значення, що встановлюється вручну
+`free_gap_y` - h5 (значення, що встановлюється вручну)
 
 ```
 elif box_height > box_height_default + free_gap_y:
