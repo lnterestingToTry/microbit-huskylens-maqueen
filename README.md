@@ -26,6 +26,29 @@
 У випадку з даним проектом буде використано мову Python. MakeCode також підтримує програмування на JavaScript або Блоками. Використовуючи будь-який із способів, код буде конвертовано в TypeScript і потім завантажено на мікроконтролер.
 Реалізація вище описаного алгоритму не потребувала великої кількості інструкцій, тому код розміщено в одному файлі - main.py.
 
+В основі реалізації алгоритму лежить використання циклу while. У випадку з програмування мікроконтролера, замість while використовується конструкція:
+
+`def on_forever():
+    ...
+ basic.forever(on_forever)
+`
+
+  
 `y_box_position`= 0
 `x_box_position` = 0
+`y_box_position` = 0
+`x_box_position` = 0
+
+`box_height_default` = 65
+
+`screen_width` = 320
+`screen_hight` = 240
+
+`width_center` = screen_width / 2
+`hight_center` = screen_hight / 2
+
+`free_gap_x` = 30
+`free_gap_y` = 10
+
+`speed` = 35
 
