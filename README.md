@@ -63,7 +63,7 @@ elif width_center - free_gap_x > x_box_position and x_box_position > -1:
 
 Умови відносно висоти об'єкта на зображенні:
 
-![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/н1h5.png)
+![alt text](https://github.com/lnterestingToTry/microbit-huskylens-maqueen/blob/main/img/y1h5.png)
 
 `box_height_default` - значення, що встановлюється вручну. В даному проекті використовується значення 65
 `free_gap_y` - h5
